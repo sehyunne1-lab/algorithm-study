@@ -58,4 +58,13 @@ Character.toLowerCase(c)       소문자로 변환           'A' → 'a'
 #2
 char choice = inputString.charAt(i);
 charAt(i)는 문자열에서 i번째 위치의 글자를 char 타입으로 꺼냄
+
+#3
+result += Character.toLowerCase(choice) 처럼 String에 += 를 반복하면
+매번 새 String 객체가 생성됨
+→ StringBuilder를 쓰면 하나의 객체에 계속 이어붙여서 더 효율적
+
+StringBuilder sb = new StringBuilder();
+sb.append(Character.toLowerCase(choice));  // 반복문 안에서
+String result = sb.toString();             // 반복문 끝나고 한 번만
 -------------------------------------------------------------------------------------------------------------------------------------------------------------- 
