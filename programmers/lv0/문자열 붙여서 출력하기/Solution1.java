@@ -16,4 +16,3 @@ public class Solution1 {
     }
 }
 
-#2
